@@ -5,51 +5,43 @@ An enterprise-inspired microservices platform built with **Java 21**, **Spring B
 This project demonstrates how to design and implement a distributed backend architecture using industry-standard patterns such as **API Gateway**, **Service Discovery**, **Centralized Configuration**, **OAuth2/JWT authentication**, **distributed tracing**, and **containerized deployment**.
 
 It showcases modern backend engineering practices focused on **scalability**, **security**, **resilience**, **observability**, and **cloud-native application development**.
-
 ---
 
 ## 🚀 Technologies and Tools
 
 ### ☕ Backend
-
-- **Java 21**
-- **Spring Boot 3**
-- **Spring Cloud**
+- Java 21
+- Spring Boot 3
+- Spring Cloud
 
 ### 🌐 Microservices
-
-- **Spring Cloud Gateway**
-- **Eureka Server**
-- **Spring Cloud Config Server**
-- **Spring Cloud LoadBalancer**
+- Spring Cloud Gateway
+- Eureka Server
+- Spring Cloud Config Server
+- Spring Cloud LoadBalancer
 
 ### 🔐 Security
-
-- **Spring Security**
-- **OAuth2.1**
-- **JWT**
+- Spring Security
+- OAuth2.1
+- JWT
 
 ### 💾 Data
-
-- **Spring Data JPA**
-- **Hibernate**
-- **MySQL 8**
+- Spring Data JPA
+- Hibernate
+- MySQL 8
 
 ### 🔄 Service Communication
-
-- **OpenFeign**
-- **WebClient**
+- OpenFeign
+- WebClient
 
 ### 📊 Observability
-
-- **Micrometer Tracing**
-- **Zipkin**
+- Micrometer Tracing
+- Zipkin
 
 ### ☁️ Cloud & DevOps
-
-- **Docker**
-- **Docker Compose**
-- **AWS**
+- Docker
+- Docker Compose
+- AWS
 ---
 
 ## 🧩 Included Microservices
@@ -68,6 +60,7 @@ It showcases modern backend engineering practices focused on **scalability**, **
 ---
 
 ## 🏗️ Architecture Overview
+The platform follows a cloud-native microservices architecture where each service has a single responsibility. Service discovery, centralized configuration, authentication, and distributed tracing are handled by dedicated infrastructure components.
 
 ```mermaid
 flowchart TD
