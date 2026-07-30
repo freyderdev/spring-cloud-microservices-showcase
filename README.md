@@ -1,40 +1,70 @@
 # 🧠 Spring Cloud Microservices Showcase
 
-This project implements a distributed architecture based on microservices using **Spring Boot 3** and **Spring Cloud**.
+An enterprise-inspired microservices platform built with **Java 21**, **Spring Boot 3**, and **Spring Cloud**.
 
-It is designed to demonstrate best practices in backend development, scalability, security, observability, and cloud-native architecture by integrating multiple components of the Spring ecosystem.
+This project demonstrates how to design and implement a distributed backend architecture using industry-standard patterns such as **API Gateway**, **Service Discovery**, **Centralized Configuration**, **OAuth2/JWT authentication**, **distributed tracing**, and **containerized deployment**.
+
+It showcases modern backend engineering practices focused on **scalability**, **security**, **resilience**, **observability**, and **cloud-native application development**.
 
 ---
 
 ## 🚀 Technologies and Tools
 
+### ☕ Backend
+
+- **Java 21**
 - **Spring Boot 3**
+- **Spring Cloud**
+
+### 🌐 Microservices
+
 - **Spring Cloud Gateway**
 - **Eureka Server**
 - **Spring Cloud Config Server**
 - **Spring Cloud LoadBalancer**
-- **OAuth2.1**, **JWT**, **Spring Security**
-- **Micrometer Tracing**, **Zipkin**
-- **Spring Data JPA**, **Hibernate**
-- **MySQL 8**
-- **WebClient**, **Feign Client**
-- **Docker**, **Docker Compose**
-- **AWS**
 
+### 🔐 Security
+
+- **Spring Security**
+- **OAuth2.1**
+- **JWT**
+
+### 💾 Data
+
+- **Spring Data JPA**
+- **Hibernate**
+- **MySQL 8**
+
+### 🔄 Service Communication
+
+- **OpenFeign**
+- **WebClient**
+
+### 📊 Observability
+
+- **Micrometer Tracing**
+- **Zipkin**
+
+### ☁️ Cloud & DevOps
+
+- **Docker**
+- **Docker Compose**
+- **AWS**
 ---
 
 ## 🧩 Included Microservices
 
-- `eureka-server` → Service registry and discovery
-- `config-server` → Centralized configuration management
-- `msvc-gateway-server` → API Gateway and routing
-- `msvc-products` → Product management service
-- `msvc-users` → User management service
-- `msvc-oauth` → Authentication and authorization service
-- `libs-msvc-commons` → Shared libraries and common components
-- `zipkin` → Distributed tracing and observability
-- `docker-compose` → Local orchestration environment
-
+| Component | Responsibility |
+|-----------|----------------|
+| **Eureka Server** | Provides service discovery and dynamic registration for all microservices. |
+| **Config Server** | Centralizes externalized configuration shared across the platform. |
+| **API Gateway** | Acts as the single entry point, handling routing, security, and request forwarding. |
+| **Users Service** | Manages user information and exposes user-related business operations. |
+| **Products Service** | Handles product catalog management and business logic. |
+| **OAuth Service** | Provides authentication, authorization, and JWT token generation. |
+| **Commons Library** | Contains shared DTOs, utilities, exceptions, and common components used across services. |
+| **Zipkin** | Collects and visualizes distributed traces for observability. |
+| **Docker Compose** | Orchestrates the complete local development environment. |
 ---
 
 ## 🏗️ Architecture Overview
